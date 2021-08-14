@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poggers", "Poggers\Poggers.csproj", "{424D0B28-786F-48D8-8E1F-DA9A3D20BAF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoggersTest", "PoggersTest\PoggersTest.csproj", "{2B52C418-03EB-44AC-AB33-404B9CCCC173}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{424D0B28-786F-48D8-8E1F-DA9A3D20BAF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{424D0B28-786F-48D8-8E1F-DA9A3D20BAF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{424D0B28-786F-48D8-8E1F-DA9A3D20BAF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{424D0B28-786F-48D8-8E1F-DA9A3D20BAF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B52C418-03EB-44AC-AB33-404B9CCCC173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B52C418-03EB-44AC-AB33-404B9CCCC173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B52C418-03EB-44AC-AB33-404B9CCCC173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B52C418-03EB-44AC-AB33-404B9CCCC173}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE2ED13A-1F1E-47AF-82AC-F7D665202E9A}
+	EndGlobalSection
+EndGlobal

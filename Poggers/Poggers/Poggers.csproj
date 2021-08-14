@@ -1,0 +1,585 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Textures\Boss\bol.png" />
+    <None Remove="Textures\Boss\ceolmaerbody.png" />
+    <None Remove="Textures\Boss\ceolmaerstaff.png" />
+    <None Remove="Textures\Boss\tentacles1.png" />
+    <None Remove="Textures\Boss\tentacles2.png" />
+    <None Remove="Textures\Boss\tentacles3.png" />
+    <None Remove="Textures\dead.png" />
+    <None Remove="Textures\Enemy\Enemy1\backstand.png" />
+    <None Remove="Textures\Enemy\Enemy1\backwalk1.png" />
+    <None Remove="Textures\Enemy\Enemy1\backwalk2.png" />
+    <None Remove="Textures\Enemy\Enemy1\backwalk3.png" />
+    <None Remove="Textures\Enemy\Enemy1\backwalk4.png" />
+    <None Remove="Textures\Enemy\Enemy1\frontstand.png" />
+    <None Remove="Textures\Enemy\Enemy1\frontwalk1.png" />
+    <None Remove="Textures\Enemy\Enemy1\frontwalk2.png" />
+    <None Remove="Textures\Enemy\Enemy1\frontwalk3.png" />
+    <None Remove="Textures\Enemy\Enemy1\frontwalk4.png" />
+    <None Remove="Textures\Enemy\Enemy1\leftstand.png" />
+    <None Remove="Textures\Enemy\Enemy1\leftwalk1.png" />
+    <None Remove="Textures\Enemy\Enemy1\leftwalk2.png" />
+    <None Remove="Textures\Enemy\Enemy1\leftwalk3.png" />
+    <None Remove="Textures\Enemy\Enemy1\leftwalk4.png" />
+    <None Remove="Textures\Enemy\Enemy1\rightstand.png" />
+    <None Remove="Textures\Enemy\Enemy1\rightwalk1.png" />
+    <None Remove="Textures\Enemy\Enemy1\rightwalk2.png" />
+    <None Remove="Textures\Enemy\Enemy1\rightwalk3.png" />
+    <None Remove="Textures\Enemy\Enemy1\rightwalk4.png" />
+    <None Remove="Textures\Enemy\Enemy2\flowerstand.png" />
+    <None Remove="Textures\Enemy\Enemy2\flowerwalk2.png" />
+    <None Remove="Textures\Enemy\Enemy2\flowerwalk3.png" />
+    <None Remove="Textures\HUD\ceolmaernamewhite.png" />
+    <None Remove="Textures\HUD\endgreen.png" />
+    <None Remove="Textures\HUD\endgrey.png" />
+    <None Remove="Textures\HUD\heartgrey.png" />
+    <None Remove="Textures\HUD\heartred.png" />
+    <None Remove="Textures\HUD\heartshield.png" />
+    <None Remove="Textures\HUD\hudbase.png" />
+    <None Remove="Textures\HUD\icon.png" />
+    <None Remove="Textures\HUD\itembar.png" />
+    <None Remove="Textures\HUD\money.png" />
+    <None Remove="Textures\Items\endurancepot.png" />
+    <None Remove="Textures\Items\healthpot.png" />
+    <None Remove="Textures\Items\smolsword.png" />
+    <None Remove="Textures\Items\speedpot.png" />
+    <None Remove="Textures\Items\TempEndurancePotion.png" />
+    <None Remove="Textures\Items\TempHealthPotion.png" />
+    <None Remove="Textures\Items\TempSpeedPotion.png" />
+    <None Remove="Textures\lightSprite.png" />
+    <None Remove="Textures\MenuButtons\backtomenu.png" />
+    <None Remove="Textures\MenuButtons\backtomenuhi.png" />
+    <None Remove="Textures\MenuButtons\continue.png" />
+    <None Remove="Textures\MenuButtons\continuehi.png" />
+    <None Remove="Textures\MenuButtons\levelone.png" />
+    <None Remove="Textures\MenuButtons\levelonegold.png" />
+    <None Remove="Textures\MenuButtons\levelonegoldhi.png" />
+    <None Remove="Textures\MenuButtons\levelonehi.png" />
+    <None Remove="Textures\MenuButtons\levelthree.png" />
+    <None Remove="Textures\MenuButtons\levelthreegold.png" />
+    <None Remove="Textures\MenuButtons\levelthreegoldhi.png" />
+    <None Remove="Textures\MenuButtons\levelthreehi.png" />
+    <None Remove="Textures\MenuButtons\leveltwo.png" />
+    <None Remove="Textures\MenuButtons\leveltwogold.png" />
+    <None Remove="Textures\MenuButtons\leveltwogoldhi.png" />
+    <None Remove="Textures\MenuButtons\leveltwohi.png" />
+    <None Remove="Textures\MenuButtons\startGameNeu.png" />
+    <None Remove="Textures\parser\boss.json" />
+    <None Remove="Textures\parser\flatland.json" />
+    <None Remove="Textures\parser\level2.json" />
+    <None Remove="Textures\parser\level3.json" />
+    <None Remove="Textures\parser\neulevel1.json" />
+    <None Remove="Textures\parser\neulevel1noenemys.json" />
+    <None Remove="Textures\parser\neutotrial.json" />
+    <None Remove="Textures\parser\set.json" />
+    <None Remove="Textures\parser\set1.tsx" />
+    <None Remove="Textures\parser\test.json" />
+    <None Remove="Textures\parser\testv1.json" />
+    <None Remove="Textures\PlayerSprites\CharacterWithSword\idle\idle1.png" />
+    <None Remove="Textures\PlayerSprites\CharacterWithSword\idle\idle2.png" />
+    <None Remove="Textures\PlayerSprites\CharacterWithSword\idle\idledown1.png" />
+    <None Remove="Textures\PlayerSprites\CharacterWithSword\idle\idledown2.png" />
+    <None Remove="Textures\PlayerSprites\CharacterWithSword\idle\idledown3.png" />
+    <None Remove="Textures\PlayerSprites\CharacterWithSword\idle\idledown4.png" />
+    <None Remove="Textures\PlayerSprites\CharacterWithSword\idle\idleleft1.png" />
+    <None Remove="Textures\PlayerSprites\CharacterWithSword\idle\idleleft2.png" />
+    <None Remove="Textures\PlayerSprites\CharacterWithSword\idle\idleleft3.png" />
+    <None Remove="Textures\PlayerSprites\CharacterWithSword\idle\idleleft4.png" />
+    <None Remove="Textures\PlayerSprites\CharacterWithSword\idle\idleright1.png" />
+    <None Remove="Textures\PlayerSprites\CharacterWithSword\idle\idleright2.png" />
+    <None Remove="Textures\PlayerSprites\CharacterWithSword\idle\idleright3.png" />
+    <None Remove="Textures\PlayerSprites\CharacterWithSword\idle\idleright4.png" />
+    <None Remove="Textures\PlayerSprites\CharacterWithSword\idle\idleup1.png" />
+    <None Remove="Textures\PlayerSprites\CharacterWithSword\idle\idleup2.png" />
+    <None Remove="Textures\PlayerSprites\CharacterWithSword\idle\idleup3.png" />
+    <None Remove="Textures\PlayerSprites\CharacterWithSword\idle\idleup4.png" />
+    <None Remove="Textures\PlayerSprites\dodge\dodgefront1.png" />
+    <None Remove="Textures\PlayerSprites\dodge\dodgefront2.png" />
+    <None Remove="Textures\PlayerSprites\walk\34backleftstand.png" />
+    <None Remove="Textures\PlayerSprites\walk\34backleftwalk1.png" />
+    <None Remove="Textures\PlayerSprites\walk\34backleftwalk2.png" />
+    <None Remove="Textures\PlayerSprites\walk\34backleftwalk3.png" />
+    <None Remove="Textures\PlayerSprites\walk\34backleftwalk4.png" />
+    <None Remove="Textures\PlayerSprites\walk\34backrightstand.png" />
+    <None Remove="Textures\PlayerSprites\walk\34backrightwalk1.png" />
+    <None Remove="Textures\PlayerSprites\walk\34backrightwalk2.png" />
+    <None Remove="Textures\PlayerSprites\walk\34backrightwalk3.png" />
+    <None Remove="Textures\PlayerSprites\walk\34backrightwalk4.png" />
+    <None Remove="Textures\PlayerSprites\walk\34frontleftstand.png" />
+    <None Remove="Textures\PlayerSprites\walk\34frontleftwalk1.png" />
+    <None Remove="Textures\PlayerSprites\walk\34frontleftwalk2.png" />
+    <None Remove="Textures\PlayerSprites\walk\34frontleftwalk3.png" />
+    <None Remove="Textures\PlayerSprites\walk\34frontleftwalk4.png" />
+    <None Remove="Textures\PlayerSprites\walk\34frontrightstand.png" />
+    <None Remove="Textures\PlayerSprites\walk\34frontrightwalk1.png" />
+    <None Remove="Textures\PlayerSprites\walk\34frontrightwalk2.png" />
+    <None Remove="Textures\PlayerSprites\walk\34frontrightwalk3.png" />
+    <None Remove="Textures\PlayerSprites\walk\34frontrightwalk4.png" />
+    <None Remove="Textures\PlayerSprites\walk\backstand.png" />
+    <None Remove="Textures\PlayerSprites\walk\backwalk1.png" />
+    <None Remove="Textures\PlayerSprites\walk\backwalk2.png" />
+    <None Remove="Textures\PlayerSprites\walk\backwalk3.png" />
+    <None Remove="Textures\PlayerSprites\walk\backwalk4.png" />
+    <None Remove="Textures\PlayerSprites\walk\frontstand.png" />
+    <None Remove="Textures\PlayerSprites\walk\frontwalk1.png" />
+    <None Remove="Textures\PlayerSprites\walk\frontwalk2.png" />
+    <None Remove="Textures\PlayerSprites\walk\frontwalk3.png" />
+    <None Remove="Textures\PlayerSprites\walk\frontwalk4.png" />
+    <None Remove="Textures\PlayerSprites\walk\leftstand.png" />
+    <None Remove="Textures\PlayerSprites\walk\leftwalk1.png" />
+    <None Remove="Textures\PlayerSprites\walk\leftwalk2.png" />
+    <None Remove="Textures\PlayerSprites\walk\leftwalk3.png" />
+    <None Remove="Textures\PlayerSprites\walk\leftwalk4.png" />
+    <None Remove="Textures\PlayerSprites\walk\siderightstand.png" />
+    <None Remove="Textures\PlayerSprites\walk\siderightwalk1.png" />
+    <None Remove="Textures\PlayerSprites\walk\siderightwalk2.png" />
+    <None Remove="Textures\PlayerSprites\walk\siderightwalk3.png" />
+    <None Remove="Textures\PlayerSprites\walk\siderightwalk4.png" />
+    <None Remove="Textures\Screens\youdied.png" />
+    <None Remove="Textures\Screens\youdied4k32.png" />
+    <None Remove="Textures\Screens\youwon.png" />
+    <None Remove="Textures\Screens\youwon4k32.png" />
+    <None Remove="Textures\sprite.png" />
+    <None Remove="Textures\Weapon\Attack\frontslash1.png" />
+    <None Remove="Textures\Weapon\Attack\frontslash2.png" />
+    <None Remove="Textures\Weapon\Attack\frontslash3.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Textures\MenuButtons\backtomenu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\MenuButtons\backtomenuhi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\MenuButtons\continue.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\MenuButtons\continuehi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\dodge\dodgefront1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\dodge\dodgefront2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Textures\Boss\bol.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Boss\ceolmaerbody.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Boss\ceolmaerstaff.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Boss\tentacles1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Boss\tentacles2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Boss\tentacles3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\dead.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy1\backstand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy1\backwalk1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy1\backwalk2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy1\backwalk3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy1\backwalk4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy1\frontstand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy1\frontwalk1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy1\frontwalk2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy1\frontwalk3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy1\frontwalk4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy1\leftstand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy1\leftwalk1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy1\leftwalk2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy1\leftwalk3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy1\leftwalk4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy1\rightstand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy1\rightwalk1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy1\rightwalk2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy1\rightwalk3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy1\rightwalk4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy2\flowerwalk2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy2\flowerwalk3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Enemy\Enemy2\flowerstand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\HUD\ceolmaernamewhite.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\HUD\endgreen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\HUD\endgrey.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\HUD\heartgrey.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\HUD\heartred.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\HUD\heartshield.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\HUD\hudbase.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\HUD\icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\HUD\itembar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\HUD\money.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Items\endurancepot.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Items\healthpot.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Items\smolsword.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Items\speedpot.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\lightSprite.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\MenuButtons\levelone.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\MenuButtons\levelonegold.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\MenuButtons\levelonegoldhi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\MenuButtons\levelonehi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\MenuButtons\levelthree.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\MenuButtons\levelthreegold.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\MenuButtons\levelthreegoldhi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\MenuButtons\levelthreehi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\MenuButtons\leveltwo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\MenuButtons\leveltwogold.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\MenuButtons\leveltwogoldhi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\MenuButtons\leveltwohi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\MenuButtons\startGameNeu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\parser\boss.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\parser\flatland.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\parser\level2.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\parser\level3.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\parser\neulevel1.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\parser\neulevel1noenemys.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\parser\neutotrial.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\parser\test.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\parser\testv1.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\parser\set.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\CharacterWithSword\idle\idle1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\CharacterWithSword\idle\idle2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\CharacterWithSword\idle\idledown1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\CharacterWithSword\idle\idledown2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\CharacterWithSword\idle\idledown3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\CharacterWithSword\idle\idledown4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\CharacterWithSword\idle\idleleft1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\CharacterWithSword\idle\idleleft2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\CharacterWithSword\idle\idleleft3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\CharacterWithSword\idle\idleleft4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\CharacterWithSword\idle\idleright1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\CharacterWithSword\idle\idleright2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\CharacterWithSword\idle\idleright3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\CharacterWithSword\idle\idleright4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\CharacterWithSword\idle\idleup1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\CharacterWithSword\idle\idleup2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\CharacterWithSword\idle\idleup3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\CharacterWithSword\idle\idleup4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\34backleftstand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\34backleftwalk1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\34backleftwalk2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\34backleftwalk3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\34backleftwalk4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\34backrightstand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\34backrightwalk1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\34backrightwalk2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\34backrightwalk3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\34backrightwalk4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\34frontleftstand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\34frontleftwalk1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\34frontleftwalk2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\34frontleftwalk3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\34frontleftwalk4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\34frontrightstand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\34frontrightwalk1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\34frontrightwalk2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\34frontrightwalk3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\34frontrightwalk4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\backstand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\backwalk1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\backwalk2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\backwalk3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\backwalk4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\frontstand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\frontwalk1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\frontwalk2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\frontwalk3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\frontwalk4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\leftstand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\leftwalk1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\leftwalk2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\leftwalk3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\leftwalk4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\siderightstand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\siderightwalk1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\siderightwalk2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\siderightwalk3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\PlayerSprites\walk\siderightwalk4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Screens\youdied4k32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Screens\youwon4k32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\sprite.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Weapon\Attack\frontslash1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Weapon\Attack\frontslash2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textures\Weapon\Attack\frontslash3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="OpenTK" Version="4.6.3" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+  </ItemGroup>
+
+</Project>
